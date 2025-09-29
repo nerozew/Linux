@@ -1,0 +1,7 @@
+This is line one.
+This is line two, slightly longer but still within the terminal width.
+This is line three, very short.
+This is line four, containing some special characters: !@#$%^&*()_+-=[]{}|;':",./<>?
+This is line five, used to test the spacebar scrolling function.
+This is line six, ensuring the program handles multiple lines correctly.
+This is line seven, the last line.
