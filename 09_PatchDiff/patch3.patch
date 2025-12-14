@@ -1,0 +1,19 @@
+--- maze.c
++++ maze.c
+@@ -27,11 +27,11 @@
+ }
+ 
+ int main(int argc, char *argv[]) {
+-    srand(time(NULL));
+-    if (argc < 3) return 1;
+-    char pass = argv[1][0];
+-    char wall = argv[1][1];
+-    int N = atoi(argv[2]);
++    if (argc < 4) return 1;
++    srand(atoi(argv[1]));
++    char pass = argv[2][0];
++    char wall = argv[2][1];
++    int N = atoi(argv[3]);
+ 
+     int h = N * 2 + 1;
+     int w = N * 2 + 1;

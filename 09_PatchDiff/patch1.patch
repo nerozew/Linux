@@ -1,0 +1,12 @@
+--- maze.c
++++ maze.c
+@@ -30,7 +30,8 @@
+     srand(time(NULL));
+     char pass = '.';
+     char wall = '#';
+-    int N = 6;
++    if (argc < 2) return 1;
++    int N = atoi(argv[1]);
+ 
+     int h = N * 2 + 1;
+     int w = N * 2 + 1;
