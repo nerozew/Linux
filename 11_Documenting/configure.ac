@@ -1,0 +1,19 @@
+AC_INIT([Guess Game], [1.0], [bug@example.com])
+AM_INIT_AUTOMAKE([-Wall -Werror foreign])
+AC_PROG_CC
+AC_CONFIG_HEADERS([config.h])
+
+# 检查 gettext
+AM_GNU_GETTEXT([external])
+AM_GNU_GETTEXT_VERSION([0.21])
+
+# 检查 Doxygen (使用 ax_prog_doxygen.m4，如果没有需手动下载或简化检查)
+# 这里假设你没有安装 autoconf-archive，我们用简化的方式：
+AC_CHECK_PROGS([DOXYGEN], [doxygen])
+if test -z "$DOXYGEN"; then
+   AC_MSG_WARN([Doxygen not found - documentation will not be generated])
+fi
+AM_CONDITIONAL([HAVE_DOXYGEN], [test -n "$DOXYGEN"])
+
+AC_CONFIG_FILES([Makefile src/Makefile po/Makefile.in Doxyfile])
+AC_OUTPUT

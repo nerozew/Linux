@@ -1,0 +1,8 @@
+PROJECT_NAME           = "@PACKAGE_NAME@"
+PROJECT_NUMBER         = "@PACKAGE_VERSION@"
+OUTPUT_DIRECTORY       = doc
+INPUT                  = @srcdir@/src
+RECURSIVE              = YES
+GENERATE_HTML          = YES
+GENERATE_MAN           = YES
+MAN_OUTPUT             = man

@@ -1,0 +1,7 @@
+DOMAIN = greeting
+subdir = po
+top_builddir = ..
+XGETTEXT_OPTIONS = --keyword=_ --keyword=N_ --from-code=UTF-8
+COPYRIGHT_HOLDER = Your Name
+MSGID_BUGS_ADDRESS = bug@example.com
+EXTRA_LOCALE_CATEGORIES =
